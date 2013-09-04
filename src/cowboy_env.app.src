@@ -1,0 +1,11 @@
+{application, cowboy_env, [
+  {id, "cowboy_env"},
+  {description, "Serve multiple environments on the same infrastructure"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib
+  ]},
+  {env, []}
+]}.
