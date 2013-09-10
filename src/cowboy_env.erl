@@ -4,7 +4,7 @@
 -export([get/1]).
 
 execute(Req, Env) ->
-  {Environment, Req2} = cowboy_req:header(<<"x-env">>, Req, <<"prod">>),
+  {Environment, Req2} = cowboy_req:header(<<"x-env">>, Req, <<"production">>),
   Req3 = cowboy_req:set_meta(cowboy_env, Environment, Req2),
   {ok, Req3, Env}.
 
